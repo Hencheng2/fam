@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Family Member - Nyanga Family Tree</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-content">
+            <h1>Add New Family Member</h1>
+            <p>Help us grow our family tree by adding details.</p>
+        </div>
+    </header>
+
+    <main class="page-container">
+        <a href="index.html" class="back-link">← Back to Homepage</a>
+
+        <section class="add-member-form">
+            <h2>New Member Information</h2>
+            <form action="#" method="POST"> <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="association">Association (e.g., Son, Daughter, Aunt, Uncle):</label>
+                    <input type="text" id="association" name="association" placeholder="e.g., Son, Daughter, Aunt" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="whereabouts">Current Whereabouts:</label>
+                    <input type="text" id="whereabouts" name="whereabouts" placeholder="e.g., Nairobi, Kasarani">
+                </div>
+
+                <div class="form-group">
+                    <label for="contact">Contact Number (Optional):</label>
+                    <input type="tel" id="contact" name="contact" placeholder="+2547XXXXXXXX">
+                </div>
+
+                <div class="form-group">
+                    <label for="bio">Short Biography/Notes (Optional):</label>
+                    <textarea id="bio" name="bio" rows="4" placeholder="Any interesting facts or life details..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="profilePhoto">Upload Profile Photo (Optional):</label>
+                    <input type="file" id="profilePhoto" name="profilePhoto" accept="image/*">
+                    <p class="form-hint">You can always add this later by placing the image in the 'images' folder and updating the HTML.</p>
+                </div>
+                
+                <div class="form-actions">
+                    <button type="submit" class="action-button primary-button">Submit Details</button>
+                    <button type="reset" class="action-button secondary-button">Reset Form</button>
+                </div>
+            </form>
+            <p class="form-note">**Note:** For this simple HTML/CSS/JS setup, submitted data will not be saved. This form is for display purposes only.</p>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <p>&copy; 2025 Nyanga Family. All rights reserved. Made with ❤️ in Juja, Kenya.</p>
+    </footer>
+</body>
+</html>
